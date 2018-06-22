@@ -1,5 +1,10 @@
 # Create Transmute App
 
+🔥🔥🔥🔥 
+This demo is currently broken, because the contracts are compiled for my local ganache and not a public testnet.
+I will fix this shortly.
+🔥🔥🔥🔥
+
 Demo: https://transmute-industries.github.io/create-transmute-app-starter/
 
 Ingredients: 

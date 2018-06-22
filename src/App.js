@@ -112,6 +112,16 @@ class App extends Component {
         >
           Click Me After Opening Developer Console
         </button>
+        <div>
+          <span role="img" aria-label="fire">
+            🔥🔥🔥🔥
+          </span>{' '}
+          This demo is currently broken, because the contracts are compiled for
+          my local ganache and not a public testnet. I will fix this shortly.
+          <span role="img" aria-label="fire">
+            🔥🔥🔥🔥
+          </span>
+        </div>
       </div>
     );
   }
