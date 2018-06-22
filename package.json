@@ -1,0 +1,20 @@
+{
+  "name": "create-transmute-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "moment": "^2.22.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4",
+    "transmute-framework": "^0.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "truffle:migrate:local": "truffle migrate --network development && cp -R ./build/contracts/ ./src/contracts/",
+    "truffle:test": "truffle test"
+  }
+}
