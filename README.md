@@ -6,13 +6,6 @@ Ingredients:
 - truffle
 - transmute-framework
 
-### Update your .env for your Infura
-
-```
-cp example.env .env
-# Edit .env to your secrets, .env is ignored by git.
-```
-
 ### Getting Started
 
 Start the microservices used by this app:
@@ -43,3 +36,15 @@ StreamModel Class is used to process an EventStore Contract's stream, and should
 The demo uses a factory to create an event store, saves an event to the event store, and used a stream model to build up state from the event stream.
 
 If your smart contracts inherit from the EventStore Contract, or support a similar interface, you can use the Transmute framework to store off chain state changes on chain, with content addressing and integrity checking provided by IPFS.
+
+
+### Deployment Instructions
+
+Update the .env to include your infura token, and test wallet mneumonic. 
+
+```
+cp example.env .env
+# Edit .env to your secrets, .env is ignored by git.
+```
+
+Make sure your wallet has enough funds to deploy the contracts.

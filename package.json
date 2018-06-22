@@ -15,6 +15,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "truffle:migrate:local": "truffle migrate --network development && cp -R ./build/contracts/ ./src/contracts/",
-    "truffle:test": "truffle test"
+    "truffle:test": "truffle test",
+    "truffle:migrate:ropsten": "rm -rf ./build/contracts/ && rm -rf ./src/contracts/ && truffle migrate --network ropsten && cp -r ./build/contracts/ ./src/contracts"
   }
 }
