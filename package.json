@@ -1,8 +1,18 @@
 {
-  "name": "create-transmute-app",
+  "name": "create-transmute-app-starter",
   "version": "0.1.0",
-  "homepage" : "http://myname.github.io/myapp",
+  "homepage": "https://transmute-industries.github.io/create-transmute-app-starter",
   "private": true,
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "truffle:migrate:local": "truffle migrate --network development && cp -R ./build/contracts/ ./src/contracts/",
+    "truffle:test": "truffle test",
+    "truffle:migrate:ropsten": "rm -rf ./build/contracts/ && rm -rf ./src/contracts/ && truffle migrate --network ropsten && cp -r ./build/contracts/ ./src/contracts",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -47,14 +57,6 @@
     "webpack-manifest-plugin": "1.3.2",
     "whatwg-fetch": "2.0.3"
   },
-  "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
-    "truffle:migrate:local": "truffle migrate --network development && cp -R ./build/contracts/ ./src/contracts/",
-    "truffle:test": "truffle test",
-    "truffle:migrate:ropsten": "rm -rf ./build/contracts/ && rm -rf ./src/contracts/ && truffle migrate --network ropsten && cp -r ./build/contracts/ ./src/contracts"
-  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
@@ -96,5 +98,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
   }
 }

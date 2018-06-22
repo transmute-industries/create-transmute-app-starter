@@ -1,5 +1,7 @@
 # Create Transmute App
 
+Demo: https://transmute-industries.github.io/create-transmute-app-starter/
+
 Ingredients: 
 
 - create-react-app
@@ -48,3 +50,4 @@ cp example.env .env
 ```
 
 Make sure your wallet has enough funds to deploy the contracts.
+
