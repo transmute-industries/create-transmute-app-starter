@@ -15,6 +15,23 @@ const eventStoreFactory = new T.EventStoreFactory({
 });
 
 class App extends Component {
+  async componentWillMount() {
+    await eventStoreFactory.init();
+    const eventStoreAddresses = await eventStoreFactory.getEventStores();
+    // console.log('EventStore Addresses: ', eventStoreAddresses);
+    const eventStore = new T.EventStore({
+      eventStoreArtifact,
+      ...transmuteConfig
+    });
+    eventStore.eventStoreContractInstance = await eventStore.eventStoreContract.at(
+      eventStoreAddresses[0]
+    );
+    let eventCount = (await eventStore.eventStoreContractInstance.count.call()).toNumber();
+    console.log('Example Event Store: ', eventStoreAddresses[0]);
+    console.log('Event Count: ', eventCount);
+    let slice = await eventStore.getSlice(0, 1);
+    console.log('Events: ', JSON.stringify(slice, null, 2));
+  }
   render() {
     return (
       <div className="App">
@@ -31,9 +48,13 @@ class App extends Component {
         <button
           onClick={async () => {
             console.log('Transmute Framework! 🦄');
+            console.log(
+              'Be patient while waiting for transactions on a public testnet.'
+            );
             await eventStoreFactory.init();
             const accounts = await eventStoreFactory.getWeb3Accounts();
             console.log('Web3 Accounts: ', JSON.stringify(accounts, null, 2));
+
             let tx_receipt = await eventStoreFactory.createEventStore(
               accounts[0]
             );
@@ -46,7 +67,7 @@ class App extends Component {
             });
 
             eventStore.eventStoreContractInstance = await eventStore.eventStoreContract.at(
-              eventStoreAddresses[0]
+              eventStoreAddresses[eventStoreAddresses.length - 1]
             );
 
             let eventCount = (await eventStore.eventStoreContractInstance.count.call()).toNumber();

@@ -1,5 +1,18 @@
 # Create Transmute App
 
+This demo has been deployed to the Ropsten TestNet:
+
+Here is the wallet address used for the deployment: 
+
+https://ropsten.etherscan.io/address/0xe7245d0652291fc42bff53f6055e0e17ffb50b83
+
+In order to interact with this demo, we recommend you use MetaMask on Ropsten:
+
+https://metamask.io/
+
+If you need testnet ETH: https://faucet.metamask.io/
+
+
 🔥🔥🔥🔥 
 This demo is currently broken, because the contracts are compiled for my local ganache and not a public testnet.
 I will fix this shortly.
