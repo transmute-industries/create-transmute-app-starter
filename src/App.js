@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GitHubForkRibbon from 'react-github-fork-ribbon';
 import moment from 'moment';
 import logo from './logo.svg';
 import './App.css';
@@ -35,6 +36,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <GitHubForkRibbon
+          href="//github.com/transmute-industries/create-transmute-app-starter"
+          target="_blank"
+          position="left"
+        >
+          Fork me on GitHub
+        </GitHubForkRibbon>
+
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
@@ -137,8 +146,7 @@ class App extends Component {
           <span role="img" aria-label="fire">
             🔥🔥🔥🔥
           </span>{' '}
-          This demo is currently broken, because the contracts are compiled for
-          my local ganache and not a public testnet. I will fix this shortly.
+          Be patient while waiting for transactions on a public testnet :/
           <span role="img" aria-label="fire">
             🔥🔥🔥🔥
           </span>

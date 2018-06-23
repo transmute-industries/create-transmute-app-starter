@@ -2,7 +2,7 @@
 
 This demo has been deployed to the Ropsten TestNet:
 
-Here is the wallet address used for the deployment: 
+Here is the wallet address used for the deployment:
 
 https://ropsten.etherscan.io/address/0xe7245d0652291fc42bff53f6055e0e17ffb50b83
 
@@ -12,15 +12,13 @@ https://metamask.io/
 
 If you need testnet ETH: https://faucet.metamask.io/
 
-
-🔥🔥🔥🔥 
-This demo is currently broken, because the contracts are compiled for my local ganache and not a public testnet.
-I will fix this shortly.
+🔥🔥🔥🔥
+Be patient while waiting for transactions on a public testnet :/
 🔥🔥🔥🔥
 
 Demo: https://transmute-industries.github.io/create-transmute-app-starter/
 
-Ingredients: 
+Ingredients:
 
 - create-react-app
 - truffle
@@ -31,7 +29,7 @@ Ingredients:
 Start the microservices used by this app:
 
 ```
-docker-compose up 
+docker-compose up
 ```
 
 ```
@@ -57,10 +55,9 @@ The demo uses a factory to create an event store, saves an event to the event st
 
 If your smart contracts inherit from the EventStore Contract, or support a similar interface, you can use the Transmute framework to store off chain state changes on chain, with content addressing and integrity checking provided by IPFS.
 
-
 ### Deployment Instructions
 
-Update the .env to include your infura token, and test wallet mneumonic. 
+Update the .env to include your infura token, and test wallet mneumonic.
 
 ```
 cp example.env .env
@@ -68,4 +65,3 @@ cp example.env .env
 ```
 
 Make sure your wallet has enough funds to deploy the contracts.
-
