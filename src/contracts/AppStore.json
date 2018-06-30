@@ -308,13 +308,13 @@
         }
       },
       "links": {
-        "EventStoreLib": "0xb08e39ad649c2e3de4d35e45bbc859deafad7746",
-        "EventStore": "0xdd4d2cb5f7774cbb4856ad8d1fd4554131e9325f"
+        "EventStoreLib": "0xfdbdf3297f0180648bc6d3515c9ed22823d0f25a",
+        "EventStore": "0xd765074c6a0962d6a2651758aef8a809db2acb6d"
       },
-      "address": "0x1fee44f1ff318eeaeaf792d782530a3cb1bd44d6",
-      "transactionHash": "0xd641df79e28bc780d69a164f1175abe18cc5e8dbbf64289df0bf5a714ed5600e"
+      "address": "0xdf88eec004000863508e3c6f593c6b8dff50c6d9",
+      "transactionHash": "0xb5e0a96238c86de716dae4878298dd956d829f96a1391720c25e3a378720a95e"
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-30T21:14:20.078Z"
+  "updatedAt": "2018-06-30T21:49:05.672Z"
 }

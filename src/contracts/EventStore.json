@@ -2260,12 +2260,12 @@
         }
       },
       "links": {
-        "EventStoreLib": "0xb08e39ad649c2e3de4d35e45bbc859deafad7746"
+        "EventStoreLib": "0xfdbdf3297f0180648bc6d3515c9ed22823d0f25a"
       },
-      "address": "0xdd4d2cb5f7774cbb4856ad8d1fd4554131e9325f",
-      "transactionHash": "0x308a7adf98cefb2d3257940669ac2ac72aead46a6506a504ca31244c6dffa270"
+      "address": "0xd765074c6a0962d6a2651758aef8a809db2acb6d",
+      "transactionHash": "0x64c9ef8d51cede62f3e90d71468bc62f6968e464fd2458496f086d9427326abf"
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-30T21:14:20.077Z"
+  "updatedAt": "2018-06-30T21:49:05.674Z"
 }

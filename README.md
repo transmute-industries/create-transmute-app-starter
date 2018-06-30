@@ -107,13 +107,17 @@ cp example.env .env
 # Edit .env to your secrets, .env is ignored by git.
 ```
 
-Make sure your wallet has enough funds to deploy the contracts, use metamask and faucet to fund your wallet.
+Make sure your wallet has enough funds to deploy the contracts, use metamask and faucet to fund your wallet. You should also delete/backup contract ABIs before doing a deployment.
 
 To do a rinkeby testnet deployment:
 
 ```
 npm run truffle:migrate:rinkeby
 ```
+
+[Example Deployments](https://rinkeby.etherscan.io/address/0xe7245d0652291fc42bff53f6055e0e17ffb50b83)
+
+
 
 ### Github Pages Deployment Instructions
 
