@@ -117,8 +117,6 @@ npm run truffle:migrate:rinkeby
 
 [Example Deployments](https://rinkeby.etherscan.io/address/0xe7245d0652291fc42bff53f6055e0e17ffb50b83)
 
-
-
 ### Github Pages Deployment Instructions
 
 Make sure to do a testnet deployment (nobody will be able to access your local ganache network or contracts deployed to it).
