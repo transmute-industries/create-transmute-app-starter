@@ -1,0 +1,282 @@
+{
+  "contractName": "AppStoreFactory",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "target",
+          "type": "address"
+        }
+      ],
+      "name": "destroy",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "createEventStore",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "eventStores",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getEventStores",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    }
+  ],
+  "bytecode": "0x608060405233600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610961806100546000396000f30060806040526004361061006c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168062f55d9d14610071578063468d427e146100b457806349d3ab4e1461010b5780638da5cb5b146101785780638dc668d7146101cf575b600080fd5b34801561007d57600080fd5b506100b2600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061023b565b005b3480156100c057600080fd5b506100c96102b0565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011757600080fd5b5061013660048036038101908080359060200190929190505050610347565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561018457600080fd5b5061018d610385565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156101db57600080fd5b506101e46103ab565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b8381101561022757808201518184015260208101905061020c565b505050509050019250505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561029757600080fd5b8073ffffffffffffffffffffffffffffffffffffffff16ff5b6000806102bb610439565b604051809103906000f0801580156102d7573d6000803e3d6000fd5b50905060008190806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550508091505090565b60008181548110151561035657fe5b906000526020600020016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6060600080548060200260200160405190810160405280929190818152602001828054801561042f57602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116103e5575b5050505050905090565b6040516104ec8061044a833901905600608060405234801561001057600080fd5b5032600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555061048b806100616000396000f30060806040526004361061006c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168062f55d9d1461007157806306661abd146100b45780638da5cb5b146100df578063e2e52ec114610136578063ed2e5a9714610175575b600080fd5b34801561007d57600080fd5b506100b2600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610207565b005b3480156100c057600080fd5b506100c961027c565b6040518082815260200191505060405180910390f35b3480156100eb57600080fd5b506100f461028b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561014257600080fd5b50610173600480360381019080803560001916906020019092919080356000191690602001909291905050506102b1565b005b34801561018157600080fd5b506101a06004803603810190808035906020019092919050505061037d565b604051808581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018360001916600019168152602001826000191660001916815260200194505050505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561026357600080fd5b8073ffffffffffffffffffffffffffffffffffffffff16ff5b60008060000180549050905090565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b73__EventStoreLib_________________________630d93ee9c600084846040518463ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018084815260200183600019166000191681526020018260001916600019168152602001935050505060206040518083038186803b15801561033d57600080fd5b505af4158015610351573d6000803e3d6000fd5b505050506040513d602081101561036757600080fd5b8101908080519060200190929190505050505050565b60008060008073__EventStoreLib_________________________631b68f0916000876040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060806040518083038186803b1580156103f757600080fd5b505af415801561040b573d6000803e3d6000fd5b505050506040513d608081101561042157600080fd5b8101908080519060200190929190805190602001909291908051906020019092919080519060200190929190505050935093509350935091935091935600a165627a7a72305820824a59bf0583344b2ce78da041882e9169e4f53b633f9c1e041e64ffe380c0a90029a165627a7a7230582079d52c456040cc6a4d333a76f45a007f91f6cfa8fdf934b37b306297851b88ba0029",
+  "deployedBytecode": "0x60806040526004361061006c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168062f55d9d14610071578063468d427e146100b457806349d3ab4e1461010b5780638da5cb5b146101785780638dc668d7146101cf575b600080fd5b34801561007d57600080fd5b506100b2600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061023b565b005b3480156100c057600080fd5b506100c96102b0565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561011757600080fd5b5061013660048036038101908080359060200190929190505050610347565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561018457600080fd5b5061018d610385565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156101db57600080fd5b506101e46103ab565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b8381101561022757808201518184015260208101905061020c565b505050509050019250505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561029757600080fd5b8073ffffffffffffffffffffffffffffffffffffffff16ff5b6000806102bb610439565b604051809103906000f0801580156102d7573d6000803e3d6000fd5b50905060008190806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550508091505090565b60008181548110151561035657fe5b906000526020600020016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6060600080548060200260200160405190810160405280929190818152602001828054801561042f57602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116103e5575b5050505050905090565b6040516104ec8061044a833901905600608060405234801561001057600080fd5b5032600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555061048b806100616000396000f30060806040526004361061006c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168062f55d9d1461007157806306661abd146100b45780638da5cb5b146100df578063e2e52ec114610136578063ed2e5a9714610175575b600080fd5b34801561007d57600080fd5b506100b2600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610207565b005b3480156100c057600080fd5b506100c961027c565b6040518082815260200191505060405180910390f35b3480156100eb57600080fd5b506100f461028b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561014257600080fd5b50610173600480360381019080803560001916906020019092919080356000191690602001909291905050506102b1565b005b34801561018157600080fd5b506101a06004803603810190808035906020019092919050505061037d565b604051808581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018360001916600019168152602001826000191660001916815260200194505050505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561026357600080fd5b8073ffffffffffffffffffffffffffffffffffffffff16ff5b60008060000180549050905090565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b73__EventStoreLib_________________________630d93ee9c600084846040518463ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018084815260200183600019166000191681526020018260001916600019168152602001935050505060206040518083038186803b15801561033d57600080fd5b505af4158015610351573d6000803e3d6000fd5b505050506040513d602081101561036757600080fd5b8101908080519060200190929190505050505050565b60008060008073__EventStoreLib_________________________631b68f0916000876040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060806040518083038186803b1580156103f757600080fd5b505af415801561040b573d6000803e3d6000fd5b505050506040513d608081101561042157600080fd5b8101908080519060200190929190805190602001909291908051906020019092919080519060200190929190505050935093509350935091935091935600a165627a7a72305820824a59bf0583344b2ce78da041882e9169e4f53b633f9c1e041e64ffe380c0a90029a165627a7a7230582079d52c456040cc6a4d333a76f45a007f91f6cfa8fdf934b37b306297851b88ba0029",
+  "sourceMap": "89:54:1:-;;;236:10:4;228:5;;:18;;;;;;;;;;;;;;;;;;89:54:1;;;;;;",
+  "deployedSourceMap": "89:54:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;179:8:4;;;565:115;;8:9:-1;5:2;;;30:1;27;20:12;5:2;565:115:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;259:197;;8:9:-1;5:2;;;30:1;27;20:12;5:2;259:197:4;;;;;;;;;;;;;;;;;;;;;;;;;;;88:28;;8:9:-1;5:2;;;30:1;27;20:12;5:2;88:28:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;123:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;123:20:4;;;;;;;;;;;;;;;;;;;;;;;;;;;462:97;;8:9:-1;5:2;;;30:1;27;20:12;5:2;462:97:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;462:97:4;;;;;;;;;;;;;;;;;565:115;637:5;;;;;;;;;;;623:19;;:10;:19;;;615:28;;;;;;;;666:6;653:20;;;259:197;307:7;326:21;350:16;;:::i;:::-;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;350:16:4;326:40;;376:11;401:10;376:37;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;376:37:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;438:10;423:26;;259:197;;:::o;88:28::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;123:20::-;;;;;;;;;;;;;:::o;462:97::-;513:9;541:11;534:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;462:97;:::o;89:54:1:-;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.19;\n\nimport \"transmute-framework/contracts/EventStoreFactory.sol\";\n\ncontract AppStoreFactory is EventStoreFactory {\n\n   \n}",
+  "sourcePath": "/Users/orie/Desktop/Transmute/create-transmute-app-starter/contracts/AppStoreFactory.sol",
+  "ast": {
+    "absolutePath": "/Users/orie/Desktop/Transmute/create-transmute-app-starter/contracts/AppStoreFactory.sol",
+    "exportedSymbols": {
+      "AppStoreFactory": [
+        11
+      ]
+    },
+    "id": 12,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".19"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "absolutePath": "transmute-framework/contracts/EventStoreFactory.sol",
+        "file": "transmute-framework/contracts/EventStoreFactory.sol",
+        "id": 8,
+        "nodeType": "ImportDirective",
+        "scope": 12,
+        "sourceUnit": 231,
+        "src": "26:61:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 9,
+              "name": "EventStoreFactory",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 230,
+              "src": "117:17:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_EventStoreFactory_$230",
+                "typeString": "contract EventStoreFactory"
+              }
+            },
+            "id": 10,
+            "nodeType": "InheritanceSpecifier",
+            "src": "117:17:1"
+          }
+        ],
+        "contractDependencies": [
+          230
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 11,
+        "linearizedBaseContracts": [
+          11,
+          230
+        ],
+        "name": "AppStoreFactory",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 12,
+        "src": "89:54:1"
+      }
+    ],
+    "src": "0:143:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/orie/Desktop/Transmute/create-transmute-app-starter/contracts/AppStoreFactory.sol",
+    "exportedSymbols": {
+      "AppStoreFactory": [
+        11
+      ]
+    },
+    "id": 12,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".19"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "absolutePath": "transmute-framework/contracts/EventStoreFactory.sol",
+        "file": "transmute-framework/contracts/EventStoreFactory.sol",
+        "id": 8,
+        "nodeType": "ImportDirective",
+        "scope": 12,
+        "sourceUnit": 231,
+        "src": "26:61:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 9,
+              "name": "EventStoreFactory",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 230,
+              "src": "117:17:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_EventStoreFactory_$230",
+                "typeString": "contract EventStoreFactory"
+              }
+            },
+            "id": 10,
+            "nodeType": "InheritanceSpecifier",
+            "src": "117:17:1"
+          }
+        ],
+        "contractDependencies": [
+          230
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 11,
+        "linearizedBaseContracts": [
+          11,
+          230
+        ],
+        "name": "AppStoreFactory",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 12,
+        "src": "89:54:1"
+      }
+    ],
+    "src": "0:143:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "3": {
+      "events": {
+        "0x4c7900e30963aa4aed068e34036112a44f45ef40623e8892337b84316e5fcb64": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "index",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "key",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "bytes32"
+            }
+          ],
+          "name": "TransmuteEvent",
+          "type": "event"
+        }
+      },
+      "links": {
+        "EventStoreLib": "0x27306da57bbfe95c9ead954bec641080cd0fe029",
+        "EventStore": "0x080a7b16bd77e7f655a44a18ecaae5ea71f36e7c"
+      },
+      "address": "0x817218c49454ae52b25c7cc77696ab8adaf5e13e",
+      "transactionHash": "0x22adec4feeef1a8294ce7474485ae4daf77c764922f604783ea62d9422744f48"
+    }
+  },
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-06-30T22:56:51.978Z"
+}

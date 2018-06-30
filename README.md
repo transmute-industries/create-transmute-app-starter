@@ -21,7 +21,7 @@ docker-compose up
 
 ```
 npm i
-npm run truffle:test
+TRANSMUTE_ENV='localhost' npm run truffle:test
 npm run truffle:migrate:local
 npm run start
 ```
