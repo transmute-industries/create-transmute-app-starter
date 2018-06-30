@@ -2,9 +2,14 @@
 
 Ingredients:
 
-- create-react-app
-- truffle
-- transmute-framework
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [truffle](https://github.com/trufflesuite/truffle)
+- [transmute-framework](https://github.com/transmute-industries/transmute)
+- [MetaMask](https://metamask.io/)
+- [Get test ETH for MetaMask](https://faucet.metamask.io/)
+- [Live Demo](https://transmute-industries.github.io/create-transmute-app-starter/)
+
+🔥 Be patient while waiting for transactions on a public testnet... 🔥
 
 ### Getting Started
 
@@ -22,29 +27,6 @@ npm run start
 ```
 
 Open the demo locally: http://localhost:3000/
-
-### Live Demo
-
-This demo has been deployed to the Ropsten TestNet:
-
-Here is the wallet address used for the deployment:
-
-https://ropsten.etherscan.io/address/0xe7245d0652291fc42bff53f6055e0e17ffb50b83
-
-In order to interact with this demo, we recommend you use MetaMask on Ropsten:
-
-https://metamask.io/
-
-If you need testnet ETH: https://faucet.metamask.io/
-
-🔥🔥🔥🔥
-Be patient while waiting for transactions on a public testnet :/
-🔥🔥🔥🔥
-
-Demo: https://transmute-industries.github.io/create-transmute-app-starter/
-
-
-
 
 ### About The Transmute Framework
 
@@ -125,14 +107,15 @@ cp example.env .env
 # Edit .env to your secrets, .env is ignored by git.
 ```
 
-Make sure your wallet has enough funds to deploy the contracts, use metamask and faucet to fund your wallet.
+Make sure your wallet has enough funds to deploy the contracts, use metamask and faucet to fund your wallet. You should also delete/backup contract ABIs before doing a deployment.
 
-To do a ropsten testnet deployment:
+To do a rinkeby testnet deployment:
 
 ```
-npm run truffle:migrate:ropsten
+npm run truffle:migrate:rinkeby
 ```
 
+[Example Deployments](https://rinkeby.etherscan.io/address/0xe7245d0652291fc42bff53f6055e0e17ffb50b83)
 
 ### Github Pages Deployment Instructions
 
