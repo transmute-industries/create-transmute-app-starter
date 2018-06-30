@@ -17,21 +17,21 @@ const eventStoreFactory = new T.EventStoreFactory({
 
 class App extends Component {
   async componentWillMount() {
-    await eventStoreFactory.init();
-    const eventStoreAddresses = await eventStoreFactory.getEventStores();
-    // console.log('EventStore Addresses: ', eventStoreAddresses);
-    const eventStore = new T.EventStore({
-      eventStoreArtifact,
-      ...transmuteConfig
-    });
-    eventStore.eventStoreContractInstance = await eventStore.eventStoreContract.at(
-      eventStoreAddresses[0]
-    );
-    let eventCount = (await eventStore.eventStoreContractInstance.count.call()).toNumber();
-    console.log('Example Event Store: ', eventStoreAddresses[0]);
-    console.log('Event Count: ', eventCount);
-    let slice = await eventStore.getSlice(0, 1);
-    console.log('Events: ', JSON.stringify(slice, null, 2));
+    // await eventStoreFactory.init();
+    // const eventStoreAddresses = await eventStoreFactory.getEventStores();
+    // // console.log('EventStore Addresses: ', eventStoreAddresses);
+    // const eventStore = new T.EventStore({
+    //   eventStoreArtifact,
+    //   ...transmuteConfig
+    // });
+    // eventStore.eventStoreContractInstance = await eventStore.eventStoreContract.at(
+    //   eventStoreAddresses[0]
+    // );
+    // let eventCount = (await eventStore.eventStoreContractInstance.count.call()).toNumber();
+    // console.log('Example Event Store: ', eventStoreAddresses[0]);
+    // console.log('Event Count: ', eventCount);
+    // let slice = await eventStore.getSlice(0, 1);
+    // console.log('Events: ', JSON.stringify(slice, null, 2));
   }
   render() {
     return (
@@ -142,13 +142,15 @@ class App extends Component {
         >
           Click Me After Opening Developer Console
         </button>
+        <br />
+        <br />
         <div>
           <span role="img" aria-label="fire">
-            🔥🔥🔥🔥
+            🔥
           </span>{' '}
-          Be patient while waiting for transactions on a public testnet :/
+          Be patient while waiting for transactions on a public testnet...
           <span role="img" aria-label="fire">
-            🔥🔥🔥🔥
+            🔥
           </span>
         </div>
       </div>

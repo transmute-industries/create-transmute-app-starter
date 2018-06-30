@@ -1,23 +1,5 @@
 # Create Transmute App
 
-This demo has been deployed to the Ropsten TestNet:
-
-Here is the wallet address used for the deployment:
-
-https://ropsten.etherscan.io/address/0xe7245d0652291fc42bff53f6055e0e17ffb50b83
-
-In order to interact with this demo, we recommend you use MetaMask on Ropsten:
-
-https://metamask.io/
-
-If you need testnet ETH: https://faucet.metamask.io/
-
-🔥🔥🔥🔥
-Be patient while waiting for transactions on a public testnet :/
-🔥🔥🔥🔥
-
-Demo: https://transmute-industries.github.io/create-transmute-app-starter/
-
 Ingredients:
 
 - create-react-app
@@ -38,6 +20,31 @@ npm run truffle:test
 npm run truffle:migrate:local
 npm run start
 ```
+
+Open the demo locally: http://localhost:3000/
+
+### Live Demo
+
+This demo has been deployed to the Ropsten TestNet:
+
+Here is the wallet address used for the deployment:
+
+https://ropsten.etherscan.io/address/0xe7245d0652291fc42bff53f6055e0e17ffb50b83
+
+In order to interact with this demo, we recommend you use MetaMask on Ropsten:
+
+https://metamask.io/
+
+If you need testnet ETH: https://faucet.metamask.io/
+
+🔥🔥🔥🔥
+Be patient while waiting for transactions on a public testnet :/
+🔥🔥🔥🔥
+
+Demo: https://transmute-industries.github.io/create-transmute-app-starter/
+
+
+
 
 ### About The Transmute Framework
 
