@@ -9,7 +9,7 @@
     "test": "node scripts/test.js --env=jsdom",
     "truffle:migrate:local": "truffle migrate --network development && cp -R ./build/contracts/ ./src/contracts/",
     "truffle:test": "truffle test",
-    "truffle:migrate:ropsten": "rm -rf ./build/contracts/ && rm -rf ./src/contracts/ && truffle migrate --network ropsten && cp -r ./build/contracts/ ./src/contracts",
+    "truffle:migrate:rinkeby": "rm -rf ./build/contracts/ && rm -rf ./src/contracts/ && truffle migrate --network rinkeby && cp -r ./build/contracts/ ./src/contracts",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

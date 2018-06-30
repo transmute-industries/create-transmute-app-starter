@@ -10,8 +10,8 @@ require('dotenv').config();
 
 // Use this code to see your deployment address used by your .env
 let wallet = new HDWalletProvider(
-  process.env.REACT_APP_ROPSTEN_MNEMONIC,
-  `https://ropsten.infura.io/${process.env.REACT_APP_INFURA_API_TOKEN}`
+  process.env.WALLET_MNEMONIC,
+  `https://rinkeby.infura.io/${process.env.INFURA_API_TOKEN}`
 );
 
 let deployAddress = wallet.addresses[0];
